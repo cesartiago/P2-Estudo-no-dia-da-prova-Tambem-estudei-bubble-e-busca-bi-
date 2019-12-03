@@ -1,0 +1,28 @@
+P2 PAC -
+
+Matérias para estudar:
+
+0'*'-		0.1- Resto da divisão (% e também pode se usado assim: %=). Ex. de multilogica-shop.cm: {
+	resto = 7 % 5;   // resto agora contém 2
+	r = 5 % 5;   // r agora contém 0
+	}
+		0.2- "e" &&, "ou" ||, "not" ! (não usei), "diferente" !=, if compara (==)
+		
+		0.3- *Chamar a função, if else.
+
+		0.4- Loops: while, do while, for (vou usar o for, então, não pegarei o while, e o do while, só vou copiar sua estrutura). Veja abaixo:
+
+1- Vetor unidimensional, ORGANIZAÇÃO em bolha E Busca binária
+2- Vetor bidimensional (guardando a média na última coluna)
+3- Char (Caracteres)
+4-
+5-
+6-
+7-
+8-
+9-
+10-
+11-
+12-
+13-
+14-
