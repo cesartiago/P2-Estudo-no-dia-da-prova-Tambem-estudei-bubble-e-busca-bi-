@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+float soma (float a, float b)
+{
+ cout << "a=" << a << "  " << "b=" << b << endl; //Por algum motivo ta dando cout duas vezes. Motivo: o cout da funcao e a linha 14
+    return a+b;
+}
+
+int main ()
+{
+     float num1 = 2;
+     float num2 = 8;
+     soma (num1, num2); /*ISSO DAQUI NAO FAZ "NADA", NADA... (O COUT QUE IRA FAZER) ... Aqui só faz o cout da funcao chamada, pq ela faz cout
+     Aqui so chama a funcao, ela faz as coisas, e volta ao normal na proxima linha, como se nada tivesse acontecido.
+    */
+
+    cout << soma(num1, num2) << endl; //cout o valor de soma, que eh seu RETURN. Esse sim faz alguma coisa E MOSTRA
+
+    if (soma(num1, num2) < num1)
+    {
+         cout << "Soma eh menor" << endl;
+    }
+    else
+    {
+       cout << "Soma eh maior ou igual" << endl;
+    }
+return 0;
+}
+
+
