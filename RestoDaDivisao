@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+
+int i = 9;
+i %=8;
+cout << i; //cout será 1 (9-8, é o resto da divisão por 9)
+}
+
