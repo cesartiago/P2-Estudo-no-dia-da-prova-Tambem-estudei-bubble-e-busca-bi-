@@ -1,0 +1,43 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+float notas[22][5]; //Linha x Coluna (LC). LEMBRANDO: A PRIMEIRA POSIÇÃO tanto DE LINHA quanto de COLUNA  É = 0.
+
+int main()
+{
+    for(int i=0; i<22; i++) //Passando por todas as linhas. COMEÇANDO NA 0
+    {
+        for(int j=0; j<4; j++) //Passando por todas as COLUNAS MENOS A ÚLTIMA!!! COMEÇANDO NA 0 TAMBÉM
+        {
+            notas[i][j] = (50+(rand()%51))/10.0; //Colocando valores aletórios em todo o array, menos na última coluna
+        }
+    }
+
+//---//
+    for(int i=0; i<22; i++) //Para todas as linhas... (e em seguida para todas as colunas...)
+    {
+        float soma = 0;
+        for(int j=0; j<4; j++) //para todas as colunas...
+        {
+            soma += notas[i][j]; //Soma(Resultante) = Soma(atual) + Nota em cada coluna da linha - a última que vai guardar algo...
+        }
+        notas[i][4] = soma / 4; //A última coluna guarda a média da soma = soma/4
+    }
+//---//
+
+            for(int i=0; i<22; i++) //Para todas as linhas
+            {
+                cout << "ALUNO " << i << "\t"; // cout "ALUNO" + a linha onde está o aluno.
+                for(int j=0; j<5; j++)
+                {
+                    cout << notas[i][j] << "\t"; //Esse "\t" - é tab, criar um espaçamento. Fazendo uma tabela
+                }
+                cout << endl;
+            }
+
+
+
+   return 0;
+}
